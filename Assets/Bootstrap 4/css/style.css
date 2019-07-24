@@ -1,0 +1,592 @@
+		/*@font-face {
+			   font-family: "font digital";
+			   src: url('../../Font/BungeeInline-Regular.ttf');
+		}
+		*{
+			font-family: 'font digital';
+		}*/
+		.container-menu-desktop{
+    		height: auto;
+    		width: 100%;
+    		position: relative;
+    		transition: all 0.3s;
+		    transition-property: all;
+		    transition-duration: 0.3s;
+		    transition-timing-function: ease;
+		    transition-delay: 0s;
+    	}
+    	.navbar{
+    		background-color: transparent;
+    		transform: background-color;
+    	}
+    	.top-bar{
+    		height: 40px;
+    		background-color: #222;
+    		font-size: 12px;
+    	}
+    	.link-right{
+    		transform: color;
+    		color: #acacac;
+    		padding-left: 4%;
+    		padding-right: 4%;
+    		text-decoration:none;
+    		border-left: 1px solid rgba(255, 255, 255, 0.3);
+    	}
+    	.link-right:hover{
+    		color: rgba(220, 53, 69, 0.8);
+    		text-decoration:none;
+    		transition: 1s;
+    	}
+    	.link-right:active{
+    		color: rgba(220, 53, 69, 0.8);
+    		text-decoration:none;
+    		transition: 1s;
+    	}
+
+    	.wrap-menu{
+    		position: fixed;
+		    /*z-index: 1100;*/
+		    width: 100%;
+		    height: 84px;
+		    top: 40px;
+		    left: 0px;
+		    -webkit-transition: height 0.3s, background-color 0.3s;
+		    -o-transition: height 0.3s, background-color 0.3s;
+		    -moz-transition: height 0.3s, background-color 0.3s;
+		    transition: height 0.3s, background-color 0.3s;
+    	}
+    	.fixed-top{
+    		height: 84px;
+    		top: 40px;
+    		left: 0px;
+    	}
+    	#menu-top-bar{
+    		padding: 1%;
+    		display: none;
+    	}
+    	.btn-alien{
+    		color: rgba(255, 255, 255, 1);
+    		background-color: rgba(22, 22, 22, 1);
+    	}
+    	.btn-alien:hover{
+    		color: rgba(22, 22, 22, 1);
+    		background-color: rgba(220, 53, 69, 1);
+    	}
+    	.btn-alien-t{
+    		color: rgba(22, 22, 22, 1);
+    		background-color: transparent;
+    	}
+    	.btn-alien-t:hover{
+    		color: rgba(255, 0, 30, 1);
+    		background-color: transparent;
+    	}
+    	.link-hide{
+    		display: none;
+    	}
+	    .navbar-light .navbar-nav .nav-link {
+	    	color: rgba(22, 22, 22, 1);
+		}
+    	.navbar-light .navbar-nav .nav-link:hover {
+    		color: rgba(220, 53, 69, 0.9);
+		}
+		.fluides{
+			height: 500px;
+		}
+		.slide-slick{
+			padding: 0px; margin: 0px; height: auto; overflow: hidden;
+		}
+		#banner-01{
+			display: none;
+		}
+		.btn-banner{
+			color: rgba(255, 255, 255, 1);
+			background-color: rgba(22, 22, 22, 1);
+		}
+		.btn-banner:hover{
+			color: rgba(255, 255, 255, 1);
+			background-color: rgba(255, 0, 0, 0.9);
+		}
+		.wrap{
+			height: 223px;
+			overflow: hidden;
+			position: relative;
+			transform: border;
+			border: 1px solid rgb(222, 226, 230);
+		}
+		.info{
+			background-color: rgba(220, 53, 69, 0.7);
+			position: absolute;
+			top: 0px;
+			color: white;
+			height: 100%;
+			width: 100%;
+			text-align: justify;
+			padding-top: 2%;
+			padding-left: 2%;
+			font-size: 20px;
+			transform: background-color;
+		}
+		.info span{
+			display: block;
+		}
+		.wrap .info{
+			visibility: hidden;
+  			opacity: 0;
+  			transition: visibility 0s, opacity 0.5s ease-in;
+		}
+		.wrap:hover .info{
+			visibility: visible;
+  			opacity: 1;
+			display: block;
+			border: unset;
+			transition: 1.5s ease;
+		}
+		.wrap div .text-men, .wrap div .collection-men{
+			visibility: visible;
+			opacity: 1;
+			transition: visibility 1s, opacity 0s ease-in;
+		}
+
+		.wrap:hover div .text-men, .wrap:hover div .collection-men{
+			visibility: hidden;
+			opacity: 0;
+		}
+		.wrap:hover{
+			cursor: pointer;
+			transition: 1.5s;
+			border: 1px solid rgba(220, 53, 69, 0.5);
+		}
+		#MEN, #WOMEN, #ACCESSORIES{
+			height: 15%; 
+			padding: 1%;
+			color: #fff;
+			border-bottom : 2px solid #fff;
+			border-radius : unset;
+			margin-top: 100%;
+			transform: margin-top;
+			overflow: hidden;
+		}
+		#MEN #text-shop-1, #WOMEN #text-shop-2, #ACCESSORIES #text-shop-3{
+			margin-top: 50%;
+			font-size: 16px;
+			transform: margin-top;
+		}
+		.info:hover #MEN, .info:hover #WOMEN, .info:hover #ACCESSORIES{
+			margin-top: 20%;
+			transition: 0.8s;
+		}
+
+		.info:hover #MEN #text-shop-1, .info:hover #WOMEN #text-shop-2, .info:hover #ACCESSORIES #text-shop-3{
+			margin-top: 0%;
+			transition: 2s ease;
+		}
+		.nav-pills .nav-link {
+			color: #888;
+    		border-radius: unset;
+		}
+		.nav-link:focus, .nav-link:hover {
+			color: #222;
+		    text-decoration: none;
+		}
+		.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    		color: #222;
+    		background-color: transparent;
+    		border-radius: unset;
+    		border-bottom: 1px solid #222;
+    		padding-bottom: 1%;
+		}
+		.btn-filter-search{
+			background-color: transparent;
+			border-radius: 3px;
+			border: 1px solid rgb(222, 226, 230);
+			padding: .375rem .75rem;
+			line-height: 1.5;
+			cursor: pointer;
+			color: #222;
+			text-decoration: none;
+		}
+		.btn-filter-search:hover{
+			background-color: rgba(220, 53, 69, 0.8);
+			color: #fff;
+		}
+		.btn-filter-search:focus{
+			background-color: rgba(220, 53, 69, 0.8);
+			color: #fff;
+		}
+		.btn:focus {
+		   	box-shadow: none;
+		   	background-color: #888;
+			color: #222;
+		}
+		.btn-tags{
+			padding: 3%;
+			display: inline-block;
+			border: 1px solid rgba(34, 34, 34, 0.5);
+			border-radius: 45px;
+			font-size: 15px;
+			color: #888;
+			text-decoration: none;
+
+		}
+		.btn-tags:hover{
+			border-color: rgba(255, 30, 0, 0.5);
+			color: rgba(255, 30, 0, 0.5);
+			text-decoration: none;
+
+		}
+		.btn-tags:focus{
+			border-color: rgba(255, 30, 0, 0.5);
+			color: rgba(255, 30, 0, 0.5);
+			text-decoration: none;
+
+		}
+		.btn-tags:active{
+			border-color: rgba(255, 30, 0, 0.5);
+			color: rgba(255, 30, 0, 0.5);
+			text-decoration: none;
+
+		}
+		.wrap-product{
+			position: relative;
+			overflow: hidden;
+		}
+		.info-quick{
+			background-color: rgba(255, 255, 255, 0.1);
+			position: absolute;
+			overflow: hidden;
+			top: 0px;
+			height: 100%;
+			width: 100%;
+			text-align: center;
+		}
+		
+		.wrap-product .info-quick{
+			visibility: hidden;
+  			opacity: 0;
+  			transition: visibility 0s, opacity 0.5s ease-in;
+		}
+		.btn-quick-view{
+			margin-top: 200%;
+			background-color: #fff;
+			padding: 4%;
+			border-radius: 25px;
+			box-shadow: none;
+			transform: margin-top;
+		}
+		.btn-quick-view:hover{
+			color: #fff;
+			background-color: rgba(220, 53, 69, 1);
+		}
+		.info-quick:hover .btn-quick-view{
+			margin-top: 95%;
+			transition: 1s ease;
+		}
+		.wrap-product:hover .info-quick{
+			visibility: visible;
+  			opacity: 1;
+			display: block;
+		}
+		.hover-white:hover{
+			color: #fff;
+		}
+		.block-txt-child1{
+			width: calc(100%-30px);
+		}
+		.block-txt-child2{
+			width: 30px;
+		}
+		.flex-r{
+			justify-content: flex-end;
+			display: flex;
+		}
+		.flex-col-l{
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.stext-104{
+			font-size: 15px;
+			line-height: 1.47;
+		}
+		.cl4{
+			color: #999;
+			text-decoration: none;
+		}
+		.fa-heart{
+			color: rgba(220, 53, 69, 0.8);
+		}
+		.fa-heart-o:hover{
+			color: rgba(220, 53, 69, 0.8);
+		}
+		.color-1{
+			color: rgba(220, 53, 69, 0.8);
+		}
+		.color-2{
+			color: rgba(220, 53, 69, 0.8);
+		}
+		.cl4{
+			color: #666;
+		}
+		.hov-cl1:hover{
+			color: rgba(220, 53, 69, 0.8);
+			text-decoration: none;
+		}
+		.trans-04{
+			transition: 0.4s ease;
+		}
+		.p-b-6{
+			padding-bottom: 6px;
+		}
+		.p-t-3{
+			padding-top: 3px;
+		}
+		.stext-105{
+			font-size: 15px;
+			line-height: 1.47;
+			letter-spacing: 1px;
+		}
+		.footer {
+		  height: auto;
+		  background: #222;
+		  color: white;
+		  bottom: 0px;
+		}
+		section{
+			min-height: calc(100vh - 124);
+			overflow: hidden;
+		}
+		.link-footer{
+			display: block;
+			text-decoration: none;
+			color: #888;
+		}
+		.link-footer:hover{
+			text-decoration: none;
+			color: rgba(220, 53, 69, 0.7);
+		}
+		.email-subs{
+			background-color: transparent;
+			border: unset;
+			border-radius: 0px;
+			padding: 1%;
+			border-bottom: 2px solid #888;
+		}
+		.email-subs:focus{
+			box-shadow: unset;
+			background-color: transparent;
+			padding: 1%;
+			border-bottom: 2px solid rgba(220, 53, 69, 0.7);
+			color: #888;
+		}
+		.btn-subs{
+			border: unset;
+			background-color: rgba(220, 53, 69, 0.8);
+		}
+		.btn-subs:hover{
+			border: unset;
+			background-color: rgba(255, 255, 255, 1);
+			color: #222;
+		}
+		.btn-scroll-top{
+			border: unset;
+			background-color: rgba(255, 30, 0, 0.3);
+			line-height: 2;
+		}
+		.btn-scroll-top:focus{
+			border: unset;
+			background-color: rgba(255, 30, 0, 0.3);
+			color: #fff;
+		}
+		#field-scroll{
+			position: fixed; right: 2%; bottom: 0px; z-index: 1;
+			display: none;
+		}
+		.carousel-caption .caption-collection{
+			position: absolute;
+			margin-top: 100%;
+			left: 5%;
+			color: #454545;
+			animation-name: caption;
+			animation-duration: 1s;
+			animation-iteration-count: 1;
+			animation-delay: 0.5s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-in;
+			
+		}
+		.carousel-caption .caption-collection2{
+			position: absolute;
+			margin-top: 25%;
+			font-size: 4em;
+			left: 5%;
+			opacity: 0;
+			color: #454545;
+			animation-name: caption2;
+			animation-duration: 1s;
+			animation-iteration-count: 1;
+			animation-delay: 1.5s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-in;
+			
+		}
+		.btn-caption{
+			position: absolute;
+			background-color: rgba(220, 53, 69, 0.8);
+			color: white;
+			margin-top: 40%;
+			left: 5%;
+			transform: translateZ(1px) rotateX(90deg);
+			animation-name: captionbutton;
+			animation-duration: 1s;
+			animation-iteration-count: 1;
+			animation-delay: 2s;
+			animation-fill-mode: forwards;
+			animation-timing-function: ease-in;
+		}
+		.btn-caption:hover{
+			background-color: #222;
+			color: white;
+		}
+		#select_size, #select_color{
+			color: #999;
+			padding: 3%;
+			height: 45px;
+			border-radius: 0px;
+			cursor: pointer;
+		}
+		#select_size:focus, #select_color:focus{
+			box-shadow: none;
+			border: 1px solid #aaa;
+		}
+		#minus, #plus{
+			border: 1px solid #999;
+			box-shadow: unset;
+			cursor: pointer;
+			color: #888;
+		}
+		#minus:hover, #plus:hover{
+			background-color: rgba(220, 53, 69, 0.8);
+			border: 1px solid rgba(220, 53, 69, 0.8);
+			cursor: pointer;
+			box-shadow: none;
+			color: #fff;
+		}
+		#minus:focus, #plus:focus{
+			border: 1px solid rgba(220, 53, 69, 0.8);
+			cursor: pointer;
+			box-shadow: none;
+			color: #fff;
+		}
+		.btn-addcart{
+			background-color: rgba(220, 53, 69, 0.8);
+			border: 1px solid rgba(220, 53, 69, 0.8);
+			color: #fff;
+			box-shadow: none;
+			cursor: pointer;
+		}
+		.btn-addcart:hover{
+			background-color: rgba(0, 0, 0, 1);
+			border: 1px solid rgba(0, 0, 0, 1);
+			color: #fff;
+			box-shadow: none;
+		}
+		.btn-addcart:focus{
+			background-color: rgba(0, 0, 0, 1);
+			border: 1px solid rgba(0, 0, 0, 1);
+			color: #fff;
+			box-shadow: none;
+		}
+		.checked{
+			display: none;
+		}
+		@keyframes caption{
+			from{margin-top: 100%;}
+			to{margin-top: 20%;}
+		}
+		@-webkit-keyframes caption{
+			from{margin-top: -20%;}
+			to{margin-top: 30%;}
+		}
+		@keyframes caption2{
+			from{opacity: 0;}
+			to{opacity: 1;}
+		}
+		@-webkit-keyframes caption2{
+			from{opacity: 0;}
+			to{opacity: 1;}
+		}
+
+		@keyframes captionbutton{
+			from{transform: translateZ(1px) rotateX(90deg);}
+			to{transform: translateZ(1px) rotateX(0deg);}
+		}
+		@-webkit-keyframes captionbutton{
+			from{transform: translateZ(1px) rotateX(180deg);}
+			to{transform: translateZ(1px) rotateX(0deg);}
+		}
+		@media screen and (max-width: 1025px){
+			.container-menu-desktop{
+				visibility: hidden;
+				opacity: 0;
+  				transition: visibility 0s, opacity 0.5s linear;
+			}
+			.top-bar{
+				height: auto;
+			}
+	    	.navbar-light .navbar-nav .nav-link {
+	    		color: rgba(22, 22, 22, 1);
+			}
+	    	.navbar-light .navbar-nav .nav-link:hover {
+	    		color: rgba(22, 22, 22, 0.9);
+			}
+	    	#menu-top-bar{
+	    		padding: 1%;
+	    		display: block;
+    			border-radius: 2px;
+	    	}
+	    	.fixed-top{
+	    		position: relative;
+	    		height: auto;
+	    		top: 0px;
+	    		left: 0px;
+	    	}
+	    	.navbar-brand{
+	    		display: inline-block;
+	    	}
+	    	.link-hide{
+	    		display: inline-block;
+	    	}
+	    	.link-hides{
+	    		color: rgba(22, 22, 22, 1);
+	    	}
+	    	.link-hides:hover{
+	    		color: rgba(220, 53, 69, 0.9);
+	    	}
+	    	.navbar{
+	    		width: 100%;
+	    		transition: 0.5s;
+	    		background-color: #fff;
+	    	}
+	    	.navbar-collapse{
+	    		background-color: #fff;
+	    		padding: 1%;
+	    	}
+	    	#left-navbar-icon{
+	    		display: none;
+	    	}
+			.slide-slick{
+				height: auto;
+			}
+
+			.wrap{
+				height: auto;
+				overflow: hidden;
+				position: relative;
+				border: 1px solid rgb(222, 226, 230);
+			}
+			#pills-tab{
+				float: left;
+			}
+			#pills-tab2{
+				float: right;
+			}
+		}
